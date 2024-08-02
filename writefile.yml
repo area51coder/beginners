@@ -1,6 +1,6 @@
 ---
 - name: write content to specific file
-  host: "localhost"
+  hosts: "localhost"
   tasks: 
     - name: test write data to file
       copy:
