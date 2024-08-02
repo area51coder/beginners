@@ -1,6 +1,6 @@
 ---
 - name: Enable intranet services
-  hosts: localhost
+  hosts: "localhost"
   become: yes
   tasks:
   - name: latest version of httpd and firewalld installed
