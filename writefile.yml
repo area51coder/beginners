@@ -1,0 +1,9 @@
+---
+- name: write content to specific file
+  host: localhost
+  tasks: 
+    - name: test write data to file
+      copy:
+        dest: ./test.txt
+        content: "this is a test"
+    
