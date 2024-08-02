@@ -30,7 +30,7 @@
       content: "Welcome to the example.com intranet!\n"
       dest: /var/www/html/index.html
 - name: Test intranet web server
-  hosts: localhost
+  hosts: "localhost"
   become: no
   tasks:
     - name: connect to intranet web server
