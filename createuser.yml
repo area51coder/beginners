@@ -8,3 +8,8 @@
         name: newbie
         uid: 4000
         state: present
+  tasks:
+    - name: Indicate Dry Run Mode
+      debug:
+        msg: "This is a dry run. No changes will be made."
+      when: ansible_check_mode       
