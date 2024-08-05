@@ -37,5 +37,5 @@
   tasks:
     - name: connect to intranet web server
       uri:
-        url: http://servera.lab.example.com
+        url: http://localhost
         status_code: 200
