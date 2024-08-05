@@ -1,0 +1,20 @@
+[server1]
+web1.example.com
+web2.example.com
+
+[server2]
+db1.example.com
+db2.example.com
+
+[server3]
+localhost ansible_connection=ssh ansible_ssh_pass=jhakash@007
+lab-node1 ansible_connection=ssh ansible_ssh_pass=jhakash@007
+
+#[all:vars]
+#ansible_host_key_checking=False
+#ansible_user=root
+#ansible_ssh_pass=jhakash@007
+
+[servers:children] 
+ansible_host_key_checking=False
+ansible_user=root  
