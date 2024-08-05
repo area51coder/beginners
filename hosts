@@ -7,7 +7,7 @@ db1.example.com
 db2.example.com
 
 [server3]
-localhost ansible_connection=ssh ansible_ssh_pass=jhakash@007
+area51-lab ansible_connection=ssh ansible_ssh_pass=jhakash@007
 lab-node1 ansible_connection=ssh ansible_ssh_pass=jhakash@007
 
 [all:vars]
