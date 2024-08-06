@@ -8,7 +8,7 @@
       module_defaults:
         setup:
           fact_path: /root/python311-env-n/lib/python3.11/Project/lab-test/facts.d
-      register: output        
+     # register: output        
 
     - name:   
       debug:
