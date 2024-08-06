@@ -6,7 +6,7 @@
   - name: Prints various Ansible facts
     setup:
       filter: 
-        - ansible_eth0
+        - ansible_virtualization_role
     register: output
 
   - name:   
