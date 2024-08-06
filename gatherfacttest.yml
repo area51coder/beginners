@@ -9,6 +9,6 @@
 
   - name:   
     debug:
-      msg: >
-        The default IPv4 address of {{ ansible_fqdn.output }}
-        is {{ ansible_default_ipv4.address.output }}
+      msg: 
+        "The default IPv4 address of {{ ansible_fqdn.output }}"
+      
