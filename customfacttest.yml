@@ -1,0 +1,10 @@
+- name: Gather facts with custom path
+  hosts: localhost
+  gather_facts: yes
+  tasks:
+    - name: Ensure custom facts are collected
+      setup:
+        filter: ansible_local
+      module_defaults:
+        setup:
+          fact_path: /root/python311-env-n/lib/python3.11/Project/lab-test/facts.d
