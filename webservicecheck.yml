@@ -4,5 +4,5 @@
   tasks:
     - name: Ensure the webserver is reachable
       uri:
-        url: http://servera.lab.example.com
+        url: http://area51-lab
         status_code: 200
