@@ -1,0 +1,14 @@
+---
+- name: checking gather facts
+  hosts: "area51-lab"
+  gather_facts: no
+  tasks:
+  - name: Prints various Ansible facts
+    setup:
+      filter: ansible_eth0
+    register: output
+
+  - name:   
+    debug:
+      msg: 
+        "The default IPv4 address of {{ output.ansible_facts.ansible_hostname }}"
