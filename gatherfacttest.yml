@@ -6,6 +6,8 @@
   - name: Prints various Ansible facts
     setup:
     register: output
+
+  - name:   
     debug:
       output: >
         The default IPv4 address of {{ ansible_fqdn }}
