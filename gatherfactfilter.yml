@@ -5,7 +5,8 @@
   tasks:
   - name: Prints various Ansible facts
     setup:
-      - filter: ansible_eth0
+      filter: 
+        - ansible_eth0
     register: output
 
   - name:   
