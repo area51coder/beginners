@@ -1,0 +1,10 @@
+---
+- name: Install, start, and enable services
+  hosts: all
+  tasks:
+  - name: Includes the tasks file and defines the variables
+    include: customfacttest.yml
+    register: output
+  - name: Debugs the included tasks
+    debug:
+      var: output
