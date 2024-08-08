@@ -1,6 +1,6 @@
 ---
 - name: Install, start, and enable services
-  hosts: all
+  hosts: "area51-lab"
   tasks:
   - name: Includes the tasks file and defines the variables
     include: includetasktest.yml
