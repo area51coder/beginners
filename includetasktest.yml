@@ -1,0 +1,13 @@
+    - name: Ensure custom facts are collected
+      setup:
+        filter: ansible_local
+      register: output
+
+    - name: Show the gathered custom facts
+      debug:
+        msg: "Custom facts collected: {{ output.ansible_facts.ansible_local }}"
+
+    - name: Show default IPv4 address if present
+      debug:
+        msg: "The default IPv4 address is {{ ansible_default_ipv4.address }}"
+      when: ansible_default_ipv4 is defined
