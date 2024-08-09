@@ -7,5 +7,5 @@
   - name: Debugs the included tasks
     debug:
       msg: >
-        "{{ packages['name'] }} and {{ ['yesrs] }}
+        "{{ packages['name'] }} and {{ ['years] }}
         have been imported"
