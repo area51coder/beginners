@@ -5,7 +5,7 @@
     - name: Postfix and Dovecot are running
       service:
         name: "{{ item }}"
-      state: started
+        state: started
       with_items:
         - postfix
         - dovecot
