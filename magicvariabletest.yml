@@ -5,4 +5,4 @@
     - name: Create the database admin
       user:
         name: db_admin
-      when: inventory_hostname in groups["server3"]
+      when: inventory_hostname in groups["test"]
