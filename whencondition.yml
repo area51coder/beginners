@@ -1,7 +1,7 @@
 ---
 - hosts: "area51-lab"
   vars:
-    my_service: 
+    #my_service: 
   tasks:
     - name: "{{ my_service }} package is installed"
       yum:
