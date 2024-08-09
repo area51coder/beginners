@@ -3,7 +3,8 @@
   hosts: "area51-lab"
   tasks:
   - name: Includes the tasks file and defines the variables
-    include_vars: vars.yml
+    include_vars: 
+      file: vars.yml
   - name: Debugs the included tasks
     debug:
       msg: 
