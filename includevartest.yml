@@ -7,4 +7,4 @@
   - name: Debugs the included tasks
     debug:
       msg: >
-        "{{ Employee name is "name" and Age is "years" }}
+        "Employee name is  {{ name }} and Age is {{ years }}"
