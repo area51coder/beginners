@@ -6,6 +6,6 @@
     include_vars: vars.yml
   - name: Debugs the included tasks
     debug:
-      var:
-        - name 
-        - years
+      msg: >
+        "{{ packages['name'] }} and {{ packages.years }}
+        have been imported"
