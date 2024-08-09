@@ -8,4 +8,4 @@
   - name: Debugs the included tasks
     debug:
       msg: 
-        "Age hai: {{ Employee.name }}" 
+        "Age hai: {{ name }}" 
