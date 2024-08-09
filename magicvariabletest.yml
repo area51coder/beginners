@@ -1,0 +1,8 @@
+---
+- name: test variable
+  hosts: "area51-lab"
+  tasks:
+    - name: Create the database admin
+      user:
+        name: db_admin
+      when: inventory_hostname in groups["server3"]
