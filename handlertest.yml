@@ -4,8 +4,8 @@
   tasks:
     - name: copy demo.example.conf configuration template
       copy:
-        src: /var/lib/templates/demo.example.conf.template
-        dest: /etc/httpd/conf.d/demo.example.conf
+        src: /root/python311-env-n/lib/python3.11/Project/lab-test/ping.yml
+        dest: /root/python311-env-n/lib/python3.11/Project/lab-test/ping2.yml
       notify:
         - restart_apache
   handlers:
