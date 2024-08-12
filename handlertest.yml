@@ -1,3 +1,6 @@
+---
+- name: test handler
+  hosts: "area51-lab"
 tasks:
 - name: copy demo.example.conf configuration template
   copy:
