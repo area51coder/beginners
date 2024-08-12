@@ -1,15 +1,15 @@
 ---
 - name: test handler
   hosts: "area51-lab"
-tasks:
-- name: copy demo.example.conf configuration template
-  copy:
-    src: /var/lib/templates/demo.example.conf.template
-    dest: /etc/httpd/conf.d/demo.example.conf
-  notify:
-    - restart_apache
-handlers:
-  - name: restart_apache
-    service:
-      name: httpd
-      state: restarted
+  tasks:
+    - name: copy demo.example.conf configuration template
+      copy:
+        src: /var/lib/templates/demo.example.conf.template
+        dest: /etc/httpd/conf.d/demo.example.conf
+      notify:
+        - restart_apache
+  handlers:
+    - name: restart_apache
+      service:
+        name: httpd
+        state: restarted
