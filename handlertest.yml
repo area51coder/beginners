@@ -9,7 +9,7 @@
       notify:
         - restart_apache
   handlers:
-    - name: restart_apache
+    - name: restart_apache2
       service:
         name: httpd
         state: restarted
