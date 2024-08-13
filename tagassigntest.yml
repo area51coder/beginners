@@ -11,3 +11,5 @@
       yum:
         name: postfix
         state: latest
+
+      # ansible-playbook main.yml --tags 'webserver'  
