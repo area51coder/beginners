@@ -12,4 +12,5 @@
         name: postfix
         state: latest
 
-      # ansible-playbook main.yml --tags 'webserver'  
+      # ansible-playbook main.yml --tags 'webserver' 
+      #ansible-playbook main.yml --skip-tags 'webserver'
