@@ -6,4 +6,4 @@
       yum:
         name: notapkg
         state: latest
-      ignore_erros: yes  
+      ignore_errors: yes  
