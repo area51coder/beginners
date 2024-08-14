@@ -6,7 +6,7 @@
       yum:
         name: notapkg
         state: latest
-    #  ignore_errors: yes  
+      ignore_errors: yes  
     - name: postfix is installed
       yum:
         name: postfix
