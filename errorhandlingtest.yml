@@ -1,0 +1,9 @@
+---
+- name: test error ingnore
+  hosts: "area51-lab"
+  tasks:
+    - name: error ignore
+      yum:
+        name: notapkg
+        state: latest
+      ignore_erros: yes  
